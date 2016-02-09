@@ -1,3 +1,4 @@
+require 'pry'
 class Centaur
 
   attr_reader :name, :breed

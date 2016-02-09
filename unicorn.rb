@@ -1,6 +1,6 @@
 class Unicorn
 
-  attr_reader :namee
+  attr_reader :name
   attr_accessor :color, :eating
 
   def initialize(name, color="white")
@@ -10,11 +10,13 @@ class Unicorn
   end
 
   def white?
-    color = "white" ? true : false
+    color == "white" ? true : false
+    #attr_accessor - no instance varibale needed
   end
 
   def say(x)
      "**;* #{x} **;*"
+  end
 
   def fly
     @eating ? false : true
