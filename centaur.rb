@@ -27,13 +27,13 @@ class Centaur
   end
 
   def cranky?
-   @crankiness < 3 ? "false" : "true"
+   @crankiness < 3 ? false : true
   end
 
   def standing?
     @standing
   end
-
+binding.pry
   def sleep
     @standing ? "NO!" : @sleeping = true && @crankiness = 0
   end
