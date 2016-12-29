@@ -15,7 +15,11 @@ class Hydra
   end
 
   def dead?
-    @heads = 0
+    if @heads = 0
+      return true
+    else
+      return false
+    end
   end
 
 end

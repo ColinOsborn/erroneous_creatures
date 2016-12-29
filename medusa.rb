@@ -1,3 +1,4 @@
+require 'pry'
 class Medusa
 
   attr_reader :name
@@ -10,7 +11,8 @@ class Medusa
 
   def stare(x)
     x.stone = true
-    @statues = x
+    @statues << x
+    # basic comment
   end
 
   def statues
