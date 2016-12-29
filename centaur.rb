@@ -1,3 +1,4 @@
+require 'pry'
 class Centaur
 
   attr_reader :name, :breed
@@ -33,7 +34,7 @@ class Centaur
   def standing?
     @standing
   end
-
+binding.pry
   def sleep
     @standing ? "NO!" : @sleeping = true && @crankiness = 0
   end

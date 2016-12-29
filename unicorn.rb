@@ -15,6 +15,8 @@ class Unicorn
      else
        return false
      end
+    color == "white" ? true : false
+    #attr_accessor - no instance varibale needed
   end
 
   def say(x)
